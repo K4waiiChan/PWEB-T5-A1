@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Moodle W3.CSS</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="w3.css">
+        <style type="text/css">
+            .pregunta
+            {
+                width:100%;
+                overflow:hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-dark-grey w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">INICIO</a>
+      <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DOCENTES</a>
+      <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ESTUDIANTES</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">USUARIO <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="#" class="w3-bar-item w3-button">Editar cuenta</a>
+          <a href="#" class="w3-bar-item w3-button">Cerrar sesion</a>
+        </div>
+      </div>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
+  </div>
+
+  <!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+            <h1>Cuestionario</h1>
+        <div class="w3-container">
+            <form>
+                <div class="pregunta">
+                <h3>Pregunta 1:</h3>
+                <div>
+                <p>Cual es el codigo XHTML correcto para hacer referencia a una hoja de estilo externa?</p>
+                <input type="radio" value="a" name="44">
+                <span>a) </span>
+                <span>&lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;</span>
+                <br><br><input type="radio" value="b" name="44">
+                <span>b) </span>
+                <span>&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</span>
+                <br><br><input type="radio" value="c" name="44">
+                <span>c) </span>
+                <span>&lt;link rel=stylesheet type=text/css href=style.css /&gt;</span>
+                <br><br><input type="radio" value="d" name="44">
+                <span>d) </span>
+                <span>&lt;link rel=stylesheet type=text/css href=style.css&gt;</span>
+                <br><br></div>
+                </div>
+                <div class="pregunta">
+                <h3>Pregunta 2:</h3>
+                <div>
+                <p>En HTML, los elementos de una lista desplegable se definen con</p>
+                <input type="radio" value="a" name="168">
+                <span>a) </span>
+                <span>&lt;ol&gt;</span>
+                <br><br><input type="radio" value="b" name="168">
+                <span>b) </span>
+                <span>&lt;ul&gt;</span>
+                <br><br><input type="radio" value="c" name="168">
+                <span>c) </span>
+                <span>&lt;li&gt;</span>
+                <br><br><input type="radio" value="d" name="168">
+                <span>d) </span>
+                <span>&lt;option&gt;</span>
+                <br><br></div>
+                </div>
+                <div class="pregunta">
+                <h3>Pregunta 3:</h3>
+                <div>
+                <p>Cuando se escribe una pagina XHTML</p>
+                <input type="radio" value="a" name="34">
+                <span>a) </span>
+                <span>Los valores de los atributos no necesitan estar encerrados entre comillas</span>
+                <br><br><input type="radio" value="b" name="34">
+                <span>b) </span>
+                <span>Los valores de los atributos necesitan estar encerrados entre comillas</span>
+                <br><br><input type="radio" value="c" name="34">
+                <span>c) </span>
+                <span>Todas las etiquetas necesitan al menos un atributo</span>
+                <br><br><input type="radio" value="d" name="34">
+                <span>d) </span>
+                <span>Las anteriores respuestas no son correctas</span>
+                <br><br></div>
+                </div>
+                <div class="pregunta">
+                <h3>Pregunta 4:</h3>
+                <div>
+                <p>En HTML, el atributo summary se utiliza para definir un resumen de</p>
+                <input type="radio" value="a" name="161">
+                <span>a) </span>
+                <span>Toda la pagina web</span>
+                <br><br><input type="radio" value="b" name="161">
+                <span>b) </span>
+                <span>Una lista</span>
+                <br><br><input type="radio" value="c" name="161">
+                <span>c) </span>
+                <span>Un formulario</span>
+                <br><br><input type="radio" value="d" name="161">
+                <span>d) </span>
+                <span>Una tabla</span>
+                <br><br></div>
+                </div>
+                <div class="pregunta">
+                <h3>Pregunta 5:</h3>
+                <div>
+                <p>Identifica la funcion de la etiqueta de HTML &lt;noscript&gt;</p>
+                <input type="radio" value="a" name="245">
+                <span>a) </span>
+                <span>La etiqueta &lt;noscript&gt; se emplea para definir un contenido que resume la funcionalidad de un script: este contenido se muestra solo si el navegador no soporta scripting</span>
+                <br><br><input type="radio" value="b" name="245">
+                <span>b) </span>
+                <span>La etiqueta &lt;noscript&gt; desactiva en el navegador la capacidad de ejecutar un script</span>
+                <br><br><input type="radio" value="c" name="245">
+                <span>c) </span>
+                <span>La etiqueta &lt;noscript&gt; puede ser utilizada por los diseñadores para indicar que una pagina web emplea scripting: si se utiliza &lt;noscript&gt;, el navegador procesara la pagina web mas eficientemente</span>
+                <br><br><input type="radio" value="d" name="245">
+                <span>d) </span>
+                <span>Todas las respuestas son correctas</span>
+                <br><br></div>
+                </div>
+                
+                
+            <form>
+        </div>
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+  
+    </body>
+</html>
