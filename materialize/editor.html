@@ -1,0 +1,69 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie= edge"> 
+      
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      
+      <title>Editor</title>
+    </head>
+    <body>
+      <nav class="grey darken-3">
+        <div class="container nav-wrapper">
+          <div class="col brand-logo">MOODLE</div>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="plantilla.html">Inicio</a></li>
+            <li><a href="">Docentes</a></li>
+            <li><a href="">Estudiantes</a></li>
+            <li><a class="dropdown-trigger" data-target="id_drop">
+                  About
+                  <i class="material-icons right">arrow_drop_down</i>
+                </a>
+                <ul id="id_drop" class="dropdown-content">
+                  <li><a href="#">Chat</a></li>
+                  <li><a href="#">Sugerencias</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Salir</a></li>
+                </ul> 
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container row">
+        <h5 style="color: light-blue darken-4;">Editor de Documentos</h5>
+        <div class="row card-panel">
+          <div class="input-field">
+            <input type="text" placeholder="Ingresa nombre del documento" id=nombre_Documento>
+            <label for="nombre_Documento">Nombre del documento:</label>
+          </div>
+          <div class="input-field">
+            <input type="text" placeholder="Breve descripción del documento" id=descrip>
+            <label for="descrip">Descripción:</label>
+          </div>
+          <form action="" method="POST">
+            <textarea name="editor" id="editor" class="ckeditor" style="color: black;">
+            </textarea>
+            <button class="btn waves-effect grey lighten-1 accent-4" type="submit" name="actionSave">Guardar
+              <i class="material-icons right">save</i>
+            </button>  
+            <button class="btn waves-effect grey lighten-1 accent-4" type="submit" name="actionSave">Enviar
+              <i class="material-icons right">file_upload</i>
+            </button>          
+          </form>
+        </div>
+      </div>
+    
+    <script src="ckeditor/ckeditor.js"> </script>
+    <script>
+      ClassicEditor.create(document.getElementById('editor'))
+    </script>
+    <script src="./script/myscript.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+  </html>
